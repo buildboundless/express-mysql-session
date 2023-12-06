@@ -98,6 +98,7 @@ module.exports = function(session) {
 			'maxIdle',
 			'idleTimeout',
 			'queueLimit',
+			'ssl',
 		].forEach(key => {
 			if (typeof options[key] !== 'undefined') {
 				mysqlOptions[key] = options[key];
